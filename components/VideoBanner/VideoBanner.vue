@@ -129,7 +129,7 @@ export default {
       yt: youtube,
       play: false,
       playCtrl: true,
-      cover: "/images/clinic_01.jpg"
+      cover: imgAPI.medical[0]
     }
   },
   methods: {
