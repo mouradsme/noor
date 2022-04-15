@@ -1,4 +1,11 @@
 const imgAPI = {
+    services: {
+        "irm": "/images/videos/IRM.ogv",
+        "scanner": "/images/videos/SCANNER.ogv",
+        "lab": "/images/videos/LABORATOIRE.ogv",
+        "mamo": "/images/videos/MAMMOGRAPHIE.ogv",
+        "radio": "/images/videos/RADIOLOGIE.ogv"
+    },
     avatar: [
         '/images/avatars/doctor_02.jpg',
         '/images/avatars/doctor_03.jpg',

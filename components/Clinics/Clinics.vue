@@ -58,7 +58,7 @@ export default {
     let clinicData = this.$i18n.t('clinic.data')
 
     return {
-      clinicData: clinicData,
+      clinicData: [clinicData],
     }
   },
   computed: {

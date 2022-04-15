@@ -9,10 +9,10 @@
           <div class="counter-item deco">
             <div class="text">
               <h3>
-                +200
+                100%
               </h3>
               <p>
-                {{ $t('medicalLanding.about_clinics') }}
+                {{ $t('medicalLanding.quality') }}
               </p>
             </div>
           </div>
@@ -21,10 +21,10 @@
           <div class="counter-item deco">
             <div class="text">
               <h3>
-                +500
+                100%
               </h3>
               <p>
-                {{ $t('medicalLanding.about_doctor') }}
+                {{ $t('medicalLanding.expertise') }}
               </p>
             </div>
           </div>

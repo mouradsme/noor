@@ -8,6 +8,7 @@ module.exports = {
     /*
      ** Headers of the page
      */
+    target: "static",
     head: {
         htmlAttrs: {
             dir: 'ltr'
@@ -22,14 +23,9 @@ module.exports = {
             // PWA primary color
             { name: 'theme-color', content: theme.primary },
             // Facebook
-            { property: 'author', content: 'luxi' },
-            { property: 'og:site_name', content: 'luxi.ux-maestro.com' },
             { property: 'og:locale', content: 'en_US' },
             { property: 'og:type', content: 'website' },
             // Twitter
-            { property: 'twitter:site', content: 'luxi.ux-maestro.com' },
-            { property: 'twitter:domain', content: 'luxi.ux-maestro.com' },
-            { property: 'twitter:creator', content: 'luxi' },
             { property: 'twitter:card', content: 'summary' },
             { property: 'twitter:image:src', content: '/images/logo.png' },
             { property: 'og:url', content: brand.medical.url },

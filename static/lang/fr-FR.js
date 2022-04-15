@@ -3,13 +3,11 @@ export default () => {
     return new Promise(function(resolve) {
         resolve({
             "common": {
-                "title": "A simple example",
-                "subtitle": "It's a blank-page. Start to build your'e page from here.",
-                "error_with_status": "An error occurred on server",
-                "404": "Page non existante!.",
+                "error_with_status": "Erreur!",
+                "error_without_status": "Erreur",
+                "404": "Page inexistante!",
                 "404_subtitle": "La page demandée n'existe pas sur note site web.",
-                "back": "back to home",
-                "error_without_status": "An error occurred on the server",
+                "back": "Retour",
                 "contact_title": "Besoin de l'aide?",
                 "contact_subtitle": "Pour toutes vos questions, veuillez utiliser ce formulaire",
                 "form_name": "Votre nom complet *",
@@ -21,14 +19,14 @@ export default () => {
                 "form_privacy": "Poliqtique de Confidentialité *",
                 "form_send": "Envoyez",
                 "accept": "Acceptez",
-                "en": "English",
                 "fr": "Français",
-                "de": "Deutsch",
-                "zh": "简体中文",
-                "pt": "󠁥󠁮󠁧󠁿Português",
-                "id": "󠁥󠁮󠁧󠁿Bahasa Indonesia",
                 "ar": "󠁥󠁮󠁧󠁿العربيّة",
-                "notif_msg": "Nous."
+                "notif_msg": ""
+            },
+            "about": {
+                "proff": "Accueil professionnel : le patient au centre de la prise en charge",
+                "RIS": "RIS : circuit de prise en charge informatisé et simplifié",
+                "PACKS": "PACKS : données des patients archivés pour le suivi"
             },
             "medicalLanding": {
                 "call": "Appelez",
@@ -42,18 +40,18 @@ export default () => {
                 "header_dark": "Dark",
                 "header_light": "Light",
                 "banner_title": "Clinique Noor",
-                "banner_subtitle": "Le meilleur centre de diagnostique dans la wilaya de Tiaret, à votre disposition!",
+                "banner_subtitle": "La clinique NOOR est engagée dans une démarche continue d’amélioration de  la qualité des soins et des prestations offertes",
                 "banner_search": "Recherche",
                 "about_title": "A propos de nous",
-                "about_subtitle": "Nous sommes le 1er et unique centre de diagnostique au niveau de la wilaya de Tiaret offrant des éxamens cliniques, radiologiques et biologiques. Disponible de 07h à 00h (minuit) 7 jours/7!",
-                "about_doctor": "Médecins",
-                "about_clinics": "Cliniques",
+                "about_subtitle": "Nous sommes le 1er et unique centre de diagnostique au niveau de la wilaya de Tiaret offrant des éxamens cliniques, radiologiques et biologiques. Disponible de 07h à 00h (minuit) 7 jours/7! Qualité médicale, sécurité du patient et facilité de prise en charge sont notre principal objectif.",
+                "expertise": "Expertise",
+                "quality": "Qualité",
                 "about_hours": "Heures de travail",
                 "about_quote": "Toujours à votre disposition!",
                 "services_title": "Nos services",
                 "services_button": "Plus de détails",
                 "expertise_title": "Expertises",
-                "expertise_subtitle": "Nos médecins sont des experts agréés dans tout service offert par notre centre!",
+                "expertise_subtitle": "Nos médecins sont des experts agréés dans tout service offert par notre centre! Tous les moyens existants en termes de dépistage et de diagnostic médical complet sont mis à leur disposition.",
                 "expertise_paragraph": "Notre équipe est toujours à l'écoute et prête à offrir de l'aide à ceux qui en ont besoin!",
                 "testimonial_title": "Témoignages",
                 "ask_doctors": "Notre Staff",
@@ -79,11 +77,38 @@ export default () => {
                 },
                 {
                     "avatar": "/images/avatars/doctor_01.jpg",
-                    "name": "Laghouati Moustapha",
-                    "title": "Médecin Généraliste",
-                    "tel": "0551126000",
+                    "name": "Pr L. Stof",
+                    "title": "Professeur en radiologie",
+                    "tel": "N/D",
                     "exp": 4,
-                    "category": "Généraliste",
+                    "category": "Radiologie",
+                    "message": ""
+                },
+                {
+                    "avatar": "/images/avatars/doctor_01.jpg",
+                    "name": "Dr I. CHORFI ",
+                    "title": "Médecin spécialisé dans l'imagerie médicale",
+                    "tel": "N/D",
+                    "exp": 4,
+                    "category": "Imagerie Médicale",
+                    "message": ""
+                },
+                {
+                    "avatar": "/images/avatars/doctor_01.jpg",
+                    "name": "Dr H.R BELKHITER ",
+                    "title": "Médecin spécialisé dans l'imagerie médicale",
+                    "tel": "N/D",
+                    "exp": 4,
+                    "category": "Imagerie Médicale",
+                    "message": ""
+                },
+                {
+                    "avatar": "/images/avatars/doctor_01.jpg",
+                    "name": "Dr. AIT ABDELKRIM ",
+                    "title": "Médecin GÉNÉRALISTE",
+                    "tel": "N/D",
+                    "exp": 4,
+                    "category": "Médecin Généraliste",
                     "message": ""
                 }
             ],
@@ -91,7 +116,10 @@ export default () => {
                 "Tous",
                 "Directeur",
                 "Généraliste",
-                "Interniste"
+                "Interniste",
+                "Radiologie",
+                "Imagerie Médicale",
+                "Médecin Généraliste"
             ],
             "expertiseList": [
                 ["SCANNER 32 COUPES", "Rapidité", "fiabilité"],
@@ -99,19 +127,40 @@ export default () => {
                 ["Echographie", "Génerale", "Spécialisée"]
             ],
             "services": [{
-                    "id": "lab",
-                    "title": "Laboratoire d'analyse",
-                    "desc": "C'est ici où sont prélevés et analysés divers fluides biologiques sous la responsabilité de nos biologistes médicaux."
-                },
-                {
-                    "id": "radio",
-                    "title": "Radiologie",
-                    "desc": "Le service de radiologie vous permet de passer des examens radiologiques qui aident les médecins à faire des diagnostiques plus précis!"
+                    "id": "irm",
+                    "title": "IRM",
+                    "desc": "IRM 1.5 T BioMatrix dernière génération"
                 },
                 {
                     "id": "scanner",
-                    "title": "Scanneur",
-                    "desc": "Si vous avez besoin de résultats beacoup plus spécialisés et spécifiques, notre service de Scanneur est ce que vous cherchez!"
+                    "title": "Scanner",
+                    "desc": "Scanner 32 coupes dernière génération!"
+                },
+                {
+                    "id": "mamo",
+                    "title": "Mammographie  numérique",
+                    "desc": "Mammographie  numérique"
+                },
+                {
+                    "id": "collection",
+                    "title": "Echographie numérique",
+                    "desc": "Echographie numérique"
+                },
+                {
+                    "id": "collection",
+                    "title": "Panoramique dentaire numérique",
+                    "desc": "Panoramique dentaire numérique"
+                },
+
+                {
+                    "id": "radio",
+                    "title": "Radiologie",
+                    "desc": "La Radiologie conventionnelle de radiologie vous permet de passer des examens radiologiques qui aident les médecins à faire des diagnostiques plus précis!"
+                },
+                {
+                    "id": "lab",
+                    "title": "Laboratoire d'analyse",
+                    "desc": "C'est ici où sont prélevés et analysés divers fluides biologiques sous la responsabilité de nos biologistes médicaux."
                 },
                 {
                     "id": "collection",
@@ -129,12 +178,17 @@ export default () => {
                 "contact_info": {
                     "title": "Entrez en contact"
                 },
-                "data": [{
+                "label": {
+                    "phone": "Mobile",
+                    "urgent": " Appel d'Urgence",
+                },
+                "data": {
                     "name": "Clinique Noor",
                     "phone": "0551126000",
+                    "urgent": " 046253333",
                     "email": "cliniqueNoor@gmail.com",
                     "address": "La clinique est située : Ettefah, Tiaret"
-                }]
+                }
             }
         })
     })

@@ -20,6 +20,7 @@
               :title="item.title"
               :desc="item.desc"
               :img="item.img"
+              :isVid="item.isVid"
               :button="$t('medicalLanding.services_button')"
             />
           </div>
@@ -83,15 +84,35 @@ export default {
   data() { 
         
     let imgs = {
-      lab: '/images/services/labo.jpg' , 
-      radio: '/images/services/radio-salle.jpg' , 
-      scanner: '/images/services/scanner.jpg' , 
-      collection: '/images/services/salle-de-soin.jpg'
+      irm: {
+        "isVid": true,
+        "src": imgApi.services.irm
+      },
+      lab: {
+        "isVid": true,
+        "src": imgApi.services.lab 
+      }, 
+      mamo: {
+        "isVid": true,
+        "src": imgApi.services.mamo 
+      }, 
+      radio: {
+        "isVid": true,
+        "src": imgApi.services.radio 
+      }, 
+      scanner: {
+        "isVid": true,
+        "src": imgApi.services.scanner 
+      }, 
+      collection: {
+        "isVid": false,
+        "src": '/images/services/salle-de-soin.jpg'
+      }
     }
     let facilityList = []
     let services = this.$i18n.t('services')
-    for (let i = 0; i < services.length; i++)
-      facilityList.push({"title": services[i].title, "desc": services[i].desc, "img": imgs[services[i].id] })
+    for (let i = services.length - 1; i >= 0; i--)
+      facilityList.push({"isVid":  imgs[services[i].id].isVid, "title": services[i].title, "desc": services[i].desc, "img": imgs[services[i].id].src })
     return {
       loaded: false,
       slickOptions: {

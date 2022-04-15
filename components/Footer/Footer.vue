@@ -1,6 +1,7 @@
 <template>
   <v-container class="max-lg footer">            
-    <div class="urgent">Appel d'urgence: <a href="tel:046253333">046 25 33 33</a></div>
+    <div class="urgent">{{$t('clinic.label.urgent')}}: <a :href="'tel:' + $t('clinic.data.urgent')">{{$t('clinic.data.urgent')}}</a></div>
+    <div class="urgent">{{$t('clinic.label.phone')}}: <a :href="'tel:' + $t('clinic.data.phone')">{{$t('clinic.data.phone')}}</a></div>
 
     <v-row class="spacing4">
       <v-col

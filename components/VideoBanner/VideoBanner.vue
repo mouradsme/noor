@@ -20,18 +20,9 @@
             <h5 class="subtitle use-text-subtitle2">
               {{ $t('medicalLanding.banner_subtitle') }}
             </h5>
-              <div class="urgent">Appel d'urgence: <a href="tel:046253333">046 25 33 33</a></div>
-            <!--
-            <v-card class="search-banner">
-              <div class="action">
-                <v-btn class="button" color="secondary">
-                  <v-icon v-if="isMobile" class="icon">mdi-magnify</v-icon>
-                  <span v-if="isDesktop">
-                    {{ $t('medicalLanding.banner_search') }}
-                  </span>
-                </v-btn>
-              </div>
-            </v-card>-->
+              <div class="urgent">{{$t('clinic.label.urgent')}}: <a :href="'tel:' + $t('clinic.data.urgent')">{{$t('clinic.data.urgent')}}</a></div>
+              <div class="urgent">{{$t('clinic.label.phone')}}: <a :href="'tel:' + $t('clinic.data.phone')">{{$t('clinic.data.phone')}}</a></div>
+
           </div>
         </v-col>
         <v-col
@@ -92,20 +83,26 @@
 </template>
 
 <style lang="scss" scoped>
-@import './banner-style.scss';
+@import "./banner-style.scss";
 </style>
-<style scoped>
+<style>
 .urgent {
-  color : red;
+  color: red;
   font-size: 22px;
 }
 .urgent > a {
-  color: black;
   font-weight: bold;
   text-decoration: none;
 }
+#app.theme--light .urgent > a {
+  color: black;
+}
+#app.theme--dark .urgent > a {
+  color: white;
+}
 </style>
 <script>
+/* eslint-disable prettier/prettier */
 import imgAPI from '~/static/images/imgAPI'
 import DotsParallax from '../Parallax/Dots'
 import youtube from '~/youtube'

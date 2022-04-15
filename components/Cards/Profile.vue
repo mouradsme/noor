@@ -1,9 +1,7 @@
-<template>
+ <template>
   <v-card class="profile">
     <div class="person-block">
-      <v-avatar class="photo" width="80" height="80">
-        <img :src="avatar" :alt="name">
-      </v-avatar>
+
       <div class="name-card">
         <h4>{{ name }}</h4>
         <p>{{ title }}</p>
@@ -28,7 +26,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import './card-style.scss';
+@import "./card-style.scss";
 </style>
 
 <script>
@@ -63,5 +61,5 @@ export default {
       required: false
     }
   }
-}
+};
 </script>

@@ -1,5 +1,3 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable prettier/prettier */
 <template>
   <fragment>
     <div class="root">
@@ -79,7 +77,7 @@
 </style>
 
 <script>
-import imgAPI from "~/static/images/imgAPI";
+/* eslint-disable prettier/prettier */
 import ProfileCard from "../Cards/Profile";
 import $ from 'jquery'
 export default {
@@ -104,11 +102,12 @@ export default {
   },
   mounted() {
     this.loaded = true;
+    let All = this.$i18n.t('doctorsCategories')[0]
     $(function() {
       $(".filter").on('click', function(e) {
         e.preventDefault()
         let s = $(this).data('filter')
-      if (s !== 'all') {
+      if (s !== All) {
         $('.filterable').hide().filter('[category="' + s + '"]').show();
       }
       else {

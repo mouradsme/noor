@@ -8,12 +8,15 @@
           </div>
         </v-col>
         <v-col cols="12" md="7" class="pa-6">
-          <h4 class="title-default use-text-subtitle">
+          <h4 class="title-default use-text-subtitle" style="text-align: justify">
             {{ $t('medicalLanding.about_subtitle') }}
           </h4>
           <counter />
           <blockquote>
-            {{ $t('medicalLanding.about_quote') }}
+            <div> {{ $t('about.proff') }}</div>
+            <div> {{ $t('about.RIS') }}</div>
+            <div> {{ $t('about.PACKS') }}</div>
+
           </blockquote>
         </v-col>
       </v-row>

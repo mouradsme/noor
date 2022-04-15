@@ -1,6 +1,12 @@
 <template>
   <v-card class="default-card">
-    <figure>
+    <div class="video" v-if="isVid">
+       <video  width="auto" height="100%" muted autoplay loop playsinline  >
+         <source type="video/ogg" :src="img" />
+       </video>
+
+    </div>
+    <figure v-else>
       <img
         :src="img"
         alt="img"
@@ -33,9 +39,13 @@ export default {
       type: String,
       required: true
     },
+    isVid: {
+      type: Boolean,
+      required: false
+    },
     button: {
       type: String,
-      required: true
+      required: false
     }
   }
 }
