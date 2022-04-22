@@ -1,55 +1,26 @@
+/* eslint-disable prettier/prettier */
 const imgAPI = {
     services: {
         "irm": "/images/videos/IRM.ogv",
         "scanner": "/images/videos/SCANNER.ogv",
         "lab": "/images/videos/LABORATOIRE.ogv",
         "mamo": "/images/videos/MAMMOGRAPHIE.ogv",
-        "radio": "/images/videos/RADIOLOGIE.ogv"
+        "radio": "/images/videos/RADIOLOGIE.ogv",
+        "pre": "/images/videos/PRELEVEMENT.ogv",
+        "echo": "/images/videos/ECHO.ogv",
+        "teeth": "/images/videos/DENTAIRE.ogv"
     },
-    avatar: [
-        '/images/avatars/doctor_02.jpg',
-        '/images/avatars/doctor_03.jpg',
-        '/images/avatars/doctor_02.jpg',
-        '/images/avatars/doctor_03.jpg',
-        '/images/avatars/doctor_02.jpg',
-        '/images/avatars/doctor_03.jpg',
-        '/images/avatars/doctor_01.jpg',
-        '/images/avatars/doctor_01.jpg',
-        '/images/avatars/doctor_01.jpg',
-        '/images/avatars/doctor_01.jpg',
-        '/images/avatars/doctor_01.jpg'
-    ],
     photo: [
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
+        '/images/medical/1.jpg',
+        '/images/medical/2.jpg',
+        '/images/medical/3.jpg',
+        '/images/medical/4.jpg'
     ],
     medical: [
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/services/clinique-noor-tiaret.gif',
-        '/images/avatars/doctor_03.jpg',
-        '/images/avatars/doctor_02.jpg',
-        '/images/avatars/doctor_03.jpg',
-        '/images/avatars/doctor_01.jpg',
-        '/images/avatars/doctor_01.jpg',
-        '/images/avatars/doctor_01.jpg',
-        '/images/services/clinique-noor-tiaret.gif',
+        '/images/medical/1.jpg',
+        '/images/medical/2.jpg',
+        '/images/medical/3.jpg',
+        '/images/medical/4.jpg'
     ]
 }
 

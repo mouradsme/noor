@@ -40,11 +40,11 @@
                 v-if="invert"
                 :to="link.medical.home"
               >
-                <img
+                <img 
                   :src="logo"
                   alt="logo"
                 >
-                {{ brand.medical.name }}
+                <!--{{ brand.medical.name }}-->
               </nuxt-link>
               <scrollactive
                 v-if="!invert && loaded"
@@ -58,7 +58,7 @@
                     :src="logo"
                     alt="logo"
                   >
-                  {{ brand.medical.name }}
+                 <!-- {{ brand.medical.name }} -->
                 </a>
               </scrollactive>
             </div>

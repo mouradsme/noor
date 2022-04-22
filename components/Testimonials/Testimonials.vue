@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 <template>
   <div class="root">
     <div v-if="loaded" class="carousel">
@@ -57,7 +58,7 @@ export default {
       testiContent: [
         {
           text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
-          avatar: imgAPI.avatar[10],
+          avatar: '',
           name: 'John Doe',
           title: 'Athlete',
           rating: 5
@@ -65,7 +66,7 @@ export default {
         {
           text:
             'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-          avatar: imgAPI.avatar[1],
+          avatar: '',
           name: 'Jean Doe',
           title: 'Housewife',
           rating: 4
@@ -73,14 +74,14 @@ export default {
         {
           text:
             'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-          avatar: imgAPI.avatar[2],
+          avatar: '',
           name: 'Jena Doe',
           title: 'Profesional',
           rating: 4
         },
         {
           text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
-          avatar: imgAPI.avatar[3],
+          avatar: '',
           name: 'Jovelin Doe',
           title: 'Profesional',
           rating: 3
@@ -88,41 +89,10 @@ export default {
         {
           text:
             'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-          avatar: imgAPI.avatar[4],
+          avatar: '',
           name: 'Jihan Doe',
           title: 'Housewife',
           rating: 5
-        },
-        {
-          text:
-            'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-          avatar: imgAPI.avatar[6],
-          name: 'Jovelin Doe',
-          title: 'Profesional',
-          rating: 5
-        },
-        {
-          text:
-            'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-          avatar: imgAPI.avatar[7],
-          name: 'John Doe',
-          title: 'Carpenter',
-          rating: 4
-        },
-        {
-          text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
-          avatar: imgAPI.avatar[10],
-          name: 'John Doe',
-          title: 'Athlete',
-          rating: 5
-        },
-        {
-          text:
-            'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-          avatar: imgAPI.avatar[1],
-          name: 'Jean Doe',
-          title: 'Student',
-          rating: 4
         }
       ],
       slickOptions: {

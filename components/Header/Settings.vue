@@ -58,9 +58,6 @@
           class="lang-list"
           @click="switchLang(locale.code)"
         >
-          <v-list-item-avatar class="flag">
-            <i :class="locale.code" />
-          </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title class="lang-opt">
               {{ $t('common.'+locale.code) }}

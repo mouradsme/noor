@@ -122,9 +122,10 @@ export default () => {
                 "Médecin Généraliste"
             ],
             "expertiseList": [
-                ["SCANNER 32 COUPES", "Rapidité", "fiabilité"],
-                ["Mamographie numerique", "3D", "haute résolution"],
-                ["Echographie", "Génerale", "Spécialisée"]
+                ["IRM", "1.5 T", "DERNIERE GENERATION"],
+                ["SCANNER ", "32 COUPES", "-70% de rayon X AIDR3D"],
+                ["MAMMOGRAPHIE ", "3D nouvelle génération", "Haute Résolution"],
+                ["PANORAMIQUE DENTAIRE ", "Numérique", "Haute Résolution"],
             ],
             "services": [{
                     "id": "irm",
@@ -142,12 +143,12 @@ export default () => {
                     "desc": "Mammographie  numérique"
                 },
                 {
-                    "id": "collection",
+                    "id": "echo",
                     "title": "Echographie numérique",
                     "desc": "Echographie numérique"
                 },
                 {
-                    "id": "collection",
+                    "id": "teeth",
                     "title": "Panoramique dentaire numérique",
                     "desc": "Panoramique dentaire numérique"
                 },
@@ -163,7 +164,7 @@ export default () => {
                     "desc": "C'est ici où sont prélevés et analysés divers fluides biologiques sous la responsabilité de nos biologistes médicaux."
                 },
                 {
-                    "id": "collection",
+                    "id": "pre",
                     "title": "Salle de prélèvement",
                     "desc": "Notre salle de collecte est toujours dans les meilleures conditions pour toute session de collecte dont vous avez besoin."
                 }
@@ -171,7 +172,7 @@ export default () => {
             ],
             "directorWord": {
                 "title": "Un mot du directeur",
-                "message": "Le but essentiel de la Clinique Noor est de à participer, et de contribuer aux développement et la promotion du secteur de la Santé aux niveau de la Wilaya des Rostomides; Wilaya de TIARET, et les wilayas avoisinantes.. Aussi, Nous comptons considérablement sur l'équipe Médicale ,para-médicales , et Administratives de notre Clinique pour servir nos patient dans de meilleures conditions. Merci.",
+                "message": "Le but essentiel de la Clinique Noor est de participer, et de contribuer aux développement et la promotion du secteur de la Santé au niveau de la Wilaya des Rostomides; Wilaya de TIARET, et les wilayas avoisinantes. Aussi, Nous comptons considérablement sur les équipes médicale, paramédicale, et administrative de notre Clinique pour servir nos patients dans de meilleures conditions. Merci.",
                 "button": "Contactez-nous"
             },
             "clinic": {
@@ -187,7 +188,7 @@ export default () => {
                     "phone": "0551126000",
                     "urgent": " 046253333",
                     "email": "cliniqueNoor@gmail.com",
-                    "address": "La clinique est située : Ettefah, Tiaret"
+                    "address": "392 TEFFAH I, en face les bâtiments Titanic, Tiaret"
                 }
             }
         })

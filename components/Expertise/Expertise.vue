@@ -113,7 +113,7 @@ export default {
       slickOptions: {
         dots: false,
         infinite: true,
-        speed: 100,
+        speed: 2000,
         centerMode: true,
         arrows: false,
         autoplay: true,

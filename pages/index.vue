@@ -36,7 +36,7 @@
           id="testimonials"
           class="space-top-short"
         >
-          <testimonials />
+          <!--<testimonials />-->
         </section>
         <section class="space-top-short" id="call-to-action">
           <call-action />
@@ -57,8 +57,11 @@
 </template>
 
 <style scoped lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 @import '~/assets/styles';
-
+html[dir="rtl"] * {
+  font-family: Cairo !important; 
+}
 @function section-margin($margin) {
   @return $margin * 20;
 }

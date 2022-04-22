@@ -10,10 +10,6 @@
         cols="12"
       >
         <div class="logo">
-          <img
-            :src="logo"
-            alt="logo"
-          >
           <h6 class="title">
             {{ brand.medical.projectName }}
           </h6>

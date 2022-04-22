@@ -104,10 +104,19 @@ export default {
         "isVid": true,
         "src": imgApi.services.scanner 
       }, 
-      collection: {
-        "isVid": false,
-        "src": '/images/services/salle-de-soin.jpg'
-      }
+      pre: {
+        "isVid": true,
+        "src": imgApi.services.pre
+      },
+      teeth: {
+        "isVid": true,
+        "src": imgApi.services.teeth
+      },
+      echo: {
+        "isVid": true,
+        "src": imgApi.services.echo
+      },
+       
     }
     let facilityList = []
     let services = this.$i18n.t('services')

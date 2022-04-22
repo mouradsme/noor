@@ -9,9 +9,13 @@
           <v-icon class="icon">mdi-phone</v-icon>
           {{ phone }}
         </v-col>
-        <v-col cols="12" md="6">
+        <v-col cols="12" md="8">
           <v-icon class="icon">mdi-email</v-icon>
           {{ email }}
+        </v-col>
+        <v-col cols="12" md="8">
+          <v-icon class="icon">mdi-facebook</v-icon>
+          <a :href="social">{{ brand.medical.projectName }}</a>
         </v-col>
         <v-col cols="12" md="12">
           <v-icon class="icon">mdi-map-marker</v-icon>
@@ -26,9 +30,17 @@
 @import './card-style.scss';
 </style>
 
-<script>
+<script>import brand from '~/static/text/brand'
+
 export default {
+  data: () => ({
+    brand: brand
+  }),
   props: {
+    social: {
+      type: String,
+      required: false
+    },
     name: {
       type: String,
       required: false

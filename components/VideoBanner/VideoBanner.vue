@@ -20,9 +20,10 @@
             <h5 class="subtitle use-text-subtitle2">
               {{ $t('medicalLanding.banner_subtitle') }}
             </h5>
-              <div class="urgent">{{$t('clinic.label.urgent')}}: <a :href="'tel:' + $t('clinic.data.urgent')">{{$t('clinic.data.urgent')}}</a></div>
-              <div class="urgent">{{$t('clinic.label.phone')}}: <a :href="'tel:' + $t('clinic.data.phone')">{{$t('clinic.data.phone')}}</a></div>
-
+            <div class="phones">
+              <div class="urgent" >{{$t('clinic.label.urgent')}}: <a :href="'tel:' + $t('clinic.data.urgent')">{{$t('clinic.data.urgent')}}</a></div>
+              <div class="urgent" >{{$t('clinic.label.phone')}}: <a :href="'tel:' + $t('clinic.data.phone')">{{$t('clinic.data.phone')}}</a></div>
+            </div>
           </div>
         </v-col>
         <v-col
@@ -89,16 +90,17 @@
 .urgent {
   color: red;
   font-size: 22px;
+  font-weight: bold;
 }
 .urgent > a {
   font-weight: bold;
+  color: #000;
   text-decoration: none;
 }
-#app.theme--light .urgent > a {
-  color: black;
-}
-#app.theme--dark .urgent > a {
-  color: white;
+.phones {
+  background: #fff;
+  padding: 10px;
+  text-align: center;
 }
 </style>
 <script>
@@ -107,6 +109,10 @@ import imgAPI from '~/static/images/imgAPI'
 import DotsParallax from '../Parallax/Dots'
 import youtube from '~/youtube'
 import Hidden from '../Hidden'
+let darkMode = false
+if (typeof Storage !== 'undefined') { // eslint-disable-line
+  darkMode = localStorage.getItem('luxiDarkMode') || false
+}
 
 export default {
   components: {
@@ -115,6 +121,7 @@ export default {
   },
   data() {
     return {
+      dark: darkMode === 'true',
       videoId: 'sbef4EWb4js',
       playerVars: {
         autoplay: 1,

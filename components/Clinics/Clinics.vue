@@ -24,6 +24,7 @@
                     :phone="item.phone"
                     :email="item.email"
                     :address="item.address"
+                    social="https://www.facebook.com/CLINIQUENOOR14"
                   />
                 </u-animate>
               </div>
