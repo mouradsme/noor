@@ -64,7 +64,7 @@
                     v-if="isDesktop"
                     :video-id="videoId"
                     :player-vars="playerVars"
-                    :width= "1080"
+                    :width="1080"
                     :height="720"
                     ref="youtube"
                     @playing="playing"
@@ -122,7 +122,7 @@ export default {
   data() {
     return {
       dark: darkMode === 'true',
-      videoId: 'sbef4EWb4js',
+      videoId: '9-O2sDJIlLM',
       playerVars: {
         autoplay: 1,
         controls: 0,

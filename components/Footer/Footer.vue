@@ -1,8 +1,9 @@
 <template>
-  <v-container class="max-lg footer">            
-    <div class="urgent">{{$t('clinic.label.urgent')}}: <a :href="'tel:' + $t('clinic.data.urgent')">{{$t('clinic.data.urgent')}}</a></div>
-    <div class="urgent">{{$t('clinic.label.phone')}}: <a :href="'tel:' + $t('clinic.data.phone')">{{$t('clinic.data.phone')}}</a></div>
-
+  <v-container class="max-lg footer">         
+    <div class="phones">
+      <div class="urgent" >{{$t('clinic.label.urgent')}}: <a :href="'tel:' + $t('clinic.data.urgent')">{{$t('clinic.data.urgent')}}</a></div>
+      <div class="urgent" >{{$t('clinic.label.phone')}}: <a :href="'tel:' + $t('clinic.data.phone')">{{$t('clinic.data.phone')}}</a></div>
+    </div>
     <v-row class="spacing4">
       <v-col
         class="pa-4"
@@ -91,6 +92,7 @@
           >
             <span class="ion-logo-facebook icon" />
           </v-btn>
+          <!--
           <v-btn
             text
             icon
@@ -114,7 +116,7 @@
             href="#"
           >
             <span class="ion-logo-linkedin icon" />
-          </v-btn>
+          </v-btn>-->
         </div>
         <v-select
           :items="langList"
@@ -142,13 +144,19 @@
 
 <style scoped>
 .urgent {
-  color : red;
+  color: red;
   font-size: 22px;
+  font-weight: bold;
 }
 .urgent > a {
-  color: black;
   font-weight: bold;
+  color: #000;
   text-decoration: none;
+}
+.phones {
+  background: #fff;
+  padding: 10px;
+  text-align: center;
 }
 </style>
 <script>
