@@ -95,6 +95,7 @@
                     {{ $t('medicalLanding.header_'+item.name) }}
                   </v-btn>
                 </li>
+                <!--
                 <li>
                   <v-btn
                     :href="link.medical.contact"
@@ -102,7 +103,7 @@
                   >
                     {{ $t('medicalLanding.header_contact') }}
                   </v-btn>
-                </li>
+                </li>-->
               </scrollactive>
             </div>
             <setting-menu :invert="invert" />

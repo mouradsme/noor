@@ -1,7 +1,6 @@
 const link = {
   medical: {
-    home: '/',
-    contact: '/contact'
+    home: '/'
   }
 }
 

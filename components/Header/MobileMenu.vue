@@ -21,6 +21,7 @@
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+        <!--
         <v-list-item
           :href="link.medical.contact"
           link
@@ -31,7 +32,7 @@
               {{ $t('medicalLanding.header_contact') }}
             </v-list-item-title>
           </v-list-item-content>
-        </v-list-item>
+        </v-list-item>-->
       </v-list>
     </div>
   </div>
