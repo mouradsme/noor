@@ -8,7 +8,9 @@ const imgAPI = {
         "radio": "/images/videos/RADIOLOGIE.ogv",
         "pre": "/images/videos/PRELEVEMENT.ogv",
         "echo": "/images/videos/ECHO.ogv",
-        "teeth": "/images/videos/DENTAIRE.ogv"
+        "teeth": "/images/videos/DENTAIRE.ogv",
+        "ex": "/images/videos/Examens.ogv",
+        "cyto": "/images/videos/Cyto.ogv"
     },
     photo: [
         '/images/medical/1.jpg',

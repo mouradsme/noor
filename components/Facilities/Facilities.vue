@@ -63,18 +63,66 @@
         </div>
       </v-container>
     </div>
+    <div id="modal">
+<div class="modal-content">
+  <div class="modal-header">
+    <span class="close">&times;</span>
+    <h2 class="modal-title"></h2>
+  </div>
+  <div class="modal-body">
+  </div>
+  <div class="modal-footer">
+  </div>
+</div>
+
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 @import "./facilities-style.scss";
+#modal {
+  
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 40px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 </style>
 
 <script>
 import imgApi from "~/static/images/imgAPI";
 import Card from "../Cards/Default";
 import TitleIcon from "../Title/WithIcon";
-
+import $ from 'jquery'
 export default {
   components: {
     Card,
@@ -116,6 +164,14 @@ export default {
         "isVid": true,
         "src": imgApi.services.echo
       },
+      cyto: {
+        "isVid": true,
+        "src": imgApi.services.cyto
+      },
+      ex: {
+        "isVid": true,
+        "src": imgApi.services.ex
+      },
        
     }
     let facilityList = []
@@ -152,6 +208,12 @@ export default {
   },
   
   mounted() {
+    $(document).on('click', '.close', function() {
+      $('#modal').fadeOut(100);
+    }) 
+    $(document).on('keyup', function(e) {
+      if (e.key == "Escape")  $('#modal').fadeOut(100);
+    });
     this.loaded = true;
     const props = window.innerWidth > 1400 ? 1 : 2; // div.carousel-props length for screen < 1400px and (-1) for screen > 1400px
     const lastSlide = Math.floor(

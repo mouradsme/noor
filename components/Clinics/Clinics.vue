@@ -1,8 +1,7 @@
 <template>
   <div class="root">
     <div class="parallax-bottom">
-      <parallax-oval />
-    </div>
+     </div>
     <v-container class="fixed-width">
       <v-row class="spacing6">
         <v-col cols="12" lg="1" class="pa-6" v-if="isDesktop" />

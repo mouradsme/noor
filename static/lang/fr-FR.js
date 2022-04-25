@@ -30,6 +30,7 @@ export default () => {
             },
             "medicalLanding": {
                 "call": "Appelez",
+                "more": "Plus de Détails",
                 "header_about": "A propos",
                 "header_facility": "Nos services",
                 "header_ask-doctors": "Nos médecins",
@@ -130,22 +131,44 @@ export default () => {
             "services": [{
                     "id": "irm",
                     "title": "IRM",
-                    "desc": "IRM 1.5 T BioMatrix dernière génération"
+                    "desc": "<ul><li>IRM 1.5 T BioMatrix dernière génération</li>" +
+                        "<li>IRM crâne, rachis et Angio-IRM cérébrale + SPECTROSCOPIE</li>  " +
+                        "<li>IRM abdomen, pelvis</li>" +
+                        "<li>IRM ostéoarticulaire</li>" +
+                        "<li>Bili-IRM (IRM de voies biliaires)</li>" +
+                        "<li>Entéro-IRM</li>" +
+                        "<li>IRM des ATM (Articulations Temporo-Mandibulaires)</li>" +
+                        "<li>IRM ORL</li>" +
+                        "<li>IRM des seins</li>" +
+                        "<li>IRM du périnée</li>" +
+                        "<li>IRM sous sédation</li></ul>"
                 },
                 {
                     "id": "scanner",
                     "title": "Scanner",
-                    "desc": "Scanner 32 coupes dernière génération!"
+                    "desc": "<ul><li>SCANNER / TDM 32 COUPES (TOMODENSITOMETRIE)</li>" +
+                        "<li>TDM crâne, rachis</li>" +
+                        "<li>TDM thorax, abdomen-pelvis</li>" +
+                        "<li>Entéroscanner et Coloscanner</li>" +
+                        "<li>Scanner ORL</li>" +
+                        "<li>Angioscanner</li>" +
+                        "<li>Dentascanner</li>" +
+                        "<li>Scanner osteo-articulaire</li>" +
+                        "<li>Uroscanner</li></ul>"
                 },
                 {
                     "id": "mamo",
                     "title": "Mammographie  numérique",
-                    "desc": "Mammographie  numérique"
+                    "desc": "<ul><li>Mammographie numérique moins de 70% des rayons X</li>" +
+                        "<li>Échographie mammaire</li>" +
+                        "<li>Microbiopsie échoguidée</li></ul>"
                 },
                 {
                     "id": "echo",
-                    "title": "Echographie numérique",
-                    "desc": "Echographie numérique"
+                    "title": "ULTRASONOGRAPHIE",
+                    "desc": "<ul><li>Échographie générale</li>" +
+                        "<li>Echo-doppler viscéral et périphérique</li>" +
+                        "<li>Échographie thyroïdienne, mammaire, cervicale, abdomino-pelvienne et des parties molles</li></ul>"
                 },
                 {
                     "id": "teeth",
@@ -155,8 +178,12 @@ export default () => {
 
                 {
                     "id": "radio",
-                    "title": "Radiologie",
-                    "desc": "La Radiologie conventionnelle de radiologie vous permet de passer des examens radiologiques qui aident les médecins à faire des diagnostiques plus précis!"
+                    "title": "RADIOLOGIE CONVENTIONNELLE",
+                    "desc": "<ul><li>Radiographie du sinus</li>" +
+                        "<li>Radiographie pulmonaire</li>" +
+                        "<li>Radiographie du rachis - abdomen sans préparation - ASP</li>" +
+                        "<li>Radiographie du squelette</li>" +
+                        "<li>Panoramique dentaire</li></ul>"
                 },
                 {
                     "id": "lab",
@@ -167,6 +194,21 @@ export default () => {
                     "id": "pre",
                     "title": "Salle de prélèvement",
                     "desc": "Notre salle de collecte est toujours dans les meilleures conditions pour toute session de collecte dont vous avez besoin."
+                },
+
+                {
+                    "id": "cyto",
+                    "title": "Cytoponction ET Biopsie",
+                    "desc": "<ul><li>Cytoponction mammaire, thyroïdien, ganglionnaire .. ect</li>" +
+                        "<li>Ponction biopsie (échoguidée ou scannoguidée)</li></ul>"
+                },
+                {
+                    "id": "ex",
+                    "title": "Examens Spécialisés",
+                    "desc": "<ul><li>Urographie intraveineuse</li>" +
+                        "<li>Urétrocystographie rétrograde (UCR)</li>" +
+                        "<li>Hystérosalpingographie</li>" +
+                        "<li>Fistulographie</li></ul>"
                 }
 
             ],

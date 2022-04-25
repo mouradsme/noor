@@ -83,11 +83,12 @@
         cols="12"
         class="pa-4"
       >
-        <div class="socmed">
+        <div class="">
           <v-btn
             text
             icon
             class="button"
+            style="z-index: 99999;"
             href="https://www.facebook.com/CLINIQUENOOR14/"
           >
             <span class="ion-logo-facebook icon" />

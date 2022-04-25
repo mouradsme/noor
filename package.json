@@ -44,11 +44,12 @@
 		"nuxt-sass-resources-loader": "^2.0.5",
 		"nuxt-start": "^2.15.8",
 		"rtl-sass": "^1.5.0",
-		"vue": "^2.6.14",
 		"sass": "1.32.12",
 		"sass-loader": "10.1.1",
+		"vue": "^2.6.14",
 		"vue-countup-directive": "^1.2.3",
 		"vue-fragment": "1.5.1",
+		"vue-js-modal": "^2.0.1",
 		"vue-kinesis": "^1.0.5",
 		"vue-parallaxy": "^1.1.1",
 		"vue-scrollactive": "^0.8.0",
@@ -57,8 +58,8 @@
 		"vue-youtube": "^1.4.0",
 		"vue2-touch-events": "^2.0.0",
 		"vuetify": "^2.6.2",
-		"webpack-node-externals": "^1.7.2",
-		"webpack-filter-warnings-plugin": "^1.2.1"
+		"webpack-filter-warnings-plugin": "^1.2.1",
+		"webpack-node-externals": "^1.7.2"
 	},
 	"devDependencies": {
 		"@nuxtjs/vuetify": "^1.12.3",

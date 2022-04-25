@@ -81,6 +81,7 @@ module.exports = {
      ** Plugins to load before mounting the App
      */
     plugins: [
+        '~/plugins/vue-js-modal.js',
         '~/plugins/vue-wow-config',
         '~/plugins/vue-fragment-config',
         { src: '~/plugins/vue-youtube-config', ssr: false },
