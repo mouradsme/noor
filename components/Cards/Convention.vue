@@ -8,7 +8,7 @@
     </figure>
     <div class="text">
       <h6 class="title">{{ title }}</h6>
-      <router-link class="button button-conv" :to="cid">{{ $t('medicalLanding.more') }}</router-link>
+      <router-link class="button button-conv" :to="locale + '' + cid">{{ $t('medicalLanding.more') }}</router-link>
 
     </div>
     
@@ -22,9 +22,11 @@
 <script>
 import imgApi from "~/static/images/imgAPI";
 export default {
+
   data() {
     return {
-      imgApi
+      imgApi,
+      locale: this.$i18n.localeProperties.code == 'ar' ? 'ar/': ''
     }
   },
   methods: {

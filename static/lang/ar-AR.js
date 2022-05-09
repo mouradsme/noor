@@ -115,7 +115,7 @@ export default () => {
             },
             "medicalLanding": {
                 "call": "إتصال",
-                "more": "المزيد من التفاصيل",
+                "more": "المزيد ",
                 "header_conv": "الاتفاقيات",
                 "header_about": "معلومات عنا",
                 "header_facility": "خدماتنا",
