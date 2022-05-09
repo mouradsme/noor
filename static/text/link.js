@@ -1,7 +1,8 @@
 const link = {
-  medical: {
-    home: '/'
-  }
+    medical: {
+        home: '/',
+
+    }
 }
 
 export default link

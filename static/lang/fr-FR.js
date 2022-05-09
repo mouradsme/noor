@@ -2,6 +2,91 @@
 export default () => {
     return new Promise(function(resolve) {
         resolve({
+            "conv": {
+                "protection": {
+                    "id": "protection",
+                    "image": "/images/convs/protection-civile.png",
+                    "title": "PROTECTION CIVILE",
+                    "docs": [
+                        "Veuillez vous rapprocher de l'agence des œuvres sociales pour recevoir une prise en charge ou contacter le responsable des conventions.",
+                        "Adresse : rue de stade en face Hôtel Sersou  - Tiaret"
+                    ]
+                },
+                "ainkermes": {
+                    "id": "ainkermes",
+                    "image": "/images/convs/ain-kermes.png",
+                    "title": "EPSP AIN KERMES",
+                    "docs": [
+                        "Veuillez vous rapprocher de l'agence des œuvres sociales pour recevoir une prise en charge ou contacter le responsable des conventions.",
+                        "Adresse : EPSP AIN KERMES  - Tiaret"
+                    ]
+                },
+                "education": {
+                    "id": "education",
+                    "image": "/images/convs/education.png",
+                    "title": "L’EDUCATION NATIONALE",
+                    "docs": [
+                        "Veuillez contacter les Œuvres Sociales avec le dossier suivant :",
+                        "Chèque barré",
+                        "Attestation de travail ou décision pour les retraités",
+                        "Carte d'identité",
+                        "L'ordonnance médicale",
+                        "Ou contacter le responsable des conventions.",
+                        "Adresse : bureau œuvres sociales de l’éducation nationale en face L’Académie - Tiaret"
+
+                    ]
+                },
+                "sonalgaz": {
+                    "id": "sonalgaz",
+                    "image": "/images/convs/sonalgaz.png",
+                    "title": "SONALGAZ",
+                    "docs": [
+                        "Veuillez vous rapprocher de l'agence des œuvres sociales pour recevoir une prise en charge ou contacter le responsable des conventions",
+                        "Adresse : Rue de frigo en face l’ancienne maternité - Tiaret"
+                    ]
+                },
+                "sonatrach": {
+                    "id": "sonatrach",
+                    "image": "/images/convs/sonatrach.png",
+                    "title": "SONATRACH",
+                    "active": {
+                        "title": "Agents actifs",
+                        "docs": [
+                            "Demande dument signée par l'adhérent",
+                            "Lettre d'orientation médicale",
+                            "Facture Proforma",
+                            "Dernière fiche de paie (2 mois)",
+                            "Fiche familiale pour les ayants droit (conjoint/enfants -21 ans)"
+                        ]
+                    },
+                    "retired": {
+                        "title": "Retraités",
+                        "docs": [
+                            "Demande dument signée par l'adhérent",
+                            "Lettre d'orientation médicale",
+                            "Facture Proforma",
+                            "Décision de mise en retraite",
+                            "Reçu de paiement B.E.A (6 000.00 da)",
+                            "Fiche familiale pour les ayants droit (conjoint /enfants -21 ans)"
+                        ]
+                    },
+                    "widows": {
+                        "title": "Veuves",
+                        "docs": [
+                            "Demande dument signée par l'adhérent",
+                            "Lettre d'orientation médicale",
+                            "Facture Proforma",
+                            "Décision de mise en retraite / décision de cessation de paiement.",
+                            "Fiche familiale (obligatoire)"
+
+                        ]
+                    }
+                },
+                "common": {
+                    "title": "Conventions",
+                    "docs": "DOCUMENTS A FOURNIR POUR UNE PRISE EN CHARGE :"
+                }
+            },
             "common": {
                 "error_with_status": "Erreur!",
                 "error_without_status": "Erreur",
@@ -32,6 +117,7 @@ export default () => {
                 "call": "Appelez",
                 "more": "Plus de Détails",
                 "header_about": "A propos",
+                "header_conv": "Conventions",
                 "header_facility": "Nos services",
                 "header_ask-doctors": "Nos médecins",
                 "header_clinics": "HQ",

@@ -23,7 +23,14 @@ const imgAPI = {
         '/images/medical/2.jpg',
         '/images/medical/3.jpg',
         '/images/medical/4.jpg'
-    ]
+    ],
+    conventions: {
+        'protection': '/images/convs/protection-civile.png',
+        'ainkermes': '/images/convs/ain-kermes.png',
+        'education': '/images/convs/education.png',
+        'sonalgaz': '/images/convs/sonalgaz.png',
+        'sonatrach': '/images/convs/sonatrach.png'
+    }
 }
 
 export default imgAPI

@@ -84,6 +84,7 @@ module.exports = {
         '~/plugins/vue-js-modal.js',
         '~/plugins/vue-wow-config',
         '~/plugins/vue-fragment-config',
+        { src: '~/plugins/vue-fb-customer-chat.js', ssr: false },
         { src: '~/plugins/vue-youtube-config', ssr: false },
         { src: '~plugins/i18n-config.js' },
         { src: '~/plugins/caroussel-config', ssr: false },

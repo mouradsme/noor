@@ -41,6 +41,9 @@
         <section class="space-top-short" id="call-to-action">
           <call-action />
         </section>
+        <section id="conv">
+        <Conventions />
+        </section>
         <section class="space-top-short" id="clinics">
           <clinics />
         </section>
@@ -53,6 +56,9 @@
         <notification />
       </hidden>
     </div>
+
+
+
   </div>
 </template>
 
@@ -118,10 +124,13 @@ import PageNav from '~/components/PageNav'
 import Notification from '~/components/Notification'
 import DotsParallax from '~/components/Parallax/Dots'
 import OvalTop from '~/components/Parallax/OvalTop'
+import Conventions from '~/components/Conv/Conv'
 import brand from '~/static/text/brand'
+
 
 export default {
   components: {
+    Conventions,
     'main-header': Header,
     DotsParallax,
     OvalTop,
