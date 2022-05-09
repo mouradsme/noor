@@ -136,7 +136,7 @@ export default () => {
                 "about_hours": "ساعات العمل",
                 "about_quote": "دائما في خدمتك!",
                 "services_title": "خدماتنا",
-                "services_button": "المزيد من التفاصيل",
+                "services_button": "المزيد",
                 "expertise_title": "خبرتنا",
                 "expertise_subtitle": "أطبائنا خبراء مرخصون في أي خدمة يقدمها مركزنا! يتم توفير جميع الوسائل المتاحة من حيث الفحص والتشخيص الطبي الكامل لهم.",
                 "expertise_paragraph": "يستمع فريقنا دائمًا ومستعد لتقديم المساعدة لمن يحتاجها!",
